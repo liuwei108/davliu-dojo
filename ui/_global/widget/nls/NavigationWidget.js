@@ -1,3 +1,6 @@
-/**
- * Created by david on 14-5-11.
- */
+define({
+    root: {
+        homeLabel: 'Home',
+        releasesLabel: 'Releases'
+    }
+})

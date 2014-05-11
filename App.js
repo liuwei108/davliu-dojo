@@ -1,3 +1,19 @@
-/**
- * Created by david on 14-5-11.
- */
+define([
+    "dojo/_base/declare",
+    "dojomat/Application",
+    "dojomat/populateRouter",
+    "./routing-map",
+    "dojo/domReady!"
+], function(
+    declare,
+    Application,
+    populateRouter,
+    routingMap
+    ) {
+    return declare([Application], {
+        constructor: function () {
+            populateRouter(this, routingMap);
+            this.run();
+        }
+    });
+});
